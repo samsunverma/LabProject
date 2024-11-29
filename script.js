@@ -36,7 +36,7 @@ console.log("Third Score:", score3);
 const clonedStudent = { ...student, graduationYear: 2026 };
 console.log("Cloned Student:", clonedStudent);
 
-const newCourses = ["Cybersecurity", "EthicalHacking"];
+const newCourses = ["Cybersecurity", "EthicalHacking, Cloursecurity"];
 const mergedCourses = [...student.courses, ...newCourses];
 console.log("Merged Courses:", mergedCourses);
 
