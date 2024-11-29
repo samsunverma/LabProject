@@ -27,10 +27,18 @@ console.log("Destructured Name:", name);
 console.log("Destructured Courses:", courses);
 
 const scores = [75, 82, 68, 80];
-const [score1, score2] = scores;
+const [score1, score2, score3] = scores;
 console.log("First Score:", score1);
 console.log("Second Score:", score2);
 console.log("Third Score:", score3);
+
+// Part 4: Spread Operator
+const clonedStudent = { ...student, graduationYear: 2026 };
+console.log("Cloned Student:", clonedStudent);
+
+const newCourses = ["Cybersecurity", "EthicalHacking"];
+const mergedCourses = [...student.courses, ...newCourses];
+console.log("Merged Courses:", mergedCourses);
 
 
    
