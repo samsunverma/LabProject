@@ -21,5 +21,14 @@ const student = {
    console.log("Parsed Object: ", parsedStudent);
    console.log("Are objects Identical?", student === parsedStudent);
    
-   
+   // Part 3: Using Destructuring Assignment
+const { name, courses } = student;
+console.log("Destructured Name:", name);
+console.log("Destructured Courses:", courses);
+
+const scores = [85, 92, 78, 90];
+const [score1, score2] = scores;
+console.log("First Score:", score1);
+console.log("Second Score:", score2);
+
    
