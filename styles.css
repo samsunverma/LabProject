@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  background: greenyellow;
+  margin: 20;
+  padding: 20;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
