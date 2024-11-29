@@ -54,3 +54,7 @@ student.addCourse = function (course) {
 student.addCourse("DataNetworks");
 console.log("Total Courses:", student.totalCourses());
    
+
+// Bonus: Calculate Average Score
+const averageScore = scores.reduce((total, score) => total + score, 0) / scores.length;
+console.log("Average Score:", averageScore);
