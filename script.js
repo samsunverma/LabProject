@@ -36,9 +36,21 @@ console.log("Third Score:", score3);
 const clonedStudent = { ...student, graduationYear: 2026 };
 console.log("Cloned Student:", clonedStudent);
 
-const newCourses = ["Cybersecurity", "EthicalHacking, Cloursecurity"];
+const newCourses = ["Cybersecurity", "EthicalHacking, Cloudsecurity"];
 const mergedCourses = [...student.courses, ...newCourses];
 console.log("Merged Courses:", mergedCourses);
 
-
+// Part 5: Adding Methods
+student.addCourse = function (course) {
+    this.courses.push(course);
+    console.log(`Course added: ${course}`);
+  };
+  
+  student.totalCourses = function () {
+    return this.courses.length;
+  };
+  
+// Testing the methods
+student.addCourse("DataNetworks");
+console.log("Total Courses:", student.totalCourses());
    
